@@ -1,0 +1,26 @@
+.container {
+	margin: auto auto;
+	width: 798px;
+	height: 532px;
+}
+
+.container > div {
+   transition: 0.2s;
+   width : 256px;
+   height: 512px;
+   float: left;
+   border: 5px solid grey;
+}
+
+#go {
+	width: 100%;
+	text-align: center;
+	font-size: 30pt;
+}
+
+
+.pineapple{background-image: url(https://svgsilh.com/png-512/145006-3f51b5.png); }
+.carrot{background-image: url(https://svgsilh.com/png-512/1300312-ff9800.png);}
+.cherry{background-image: url(https://svgsilh.com/png-512/307954-673ab7.png);}
+.cola{background-image: url(https://svgsilh.com/png-512/148375.png)}
+.iceCream{background-image: url(https://svgsilh.com/png-512/304562-9c27b0.png)}
