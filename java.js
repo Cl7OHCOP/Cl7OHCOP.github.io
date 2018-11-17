@@ -7,6 +7,11 @@ let items = [
    "cola",
 ];
 
+let slots = [];
+
+
+let balance = 50;
+
 function rnd(){
   return items[random(items.length)]
 
@@ -18,21 +23,30 @@ function random(x){
 
 }
 
-let slot1 = document.getElementById('slot1');
-let slot2 = document.getElementById('slot2');
-let slot3 = document.getElementById('slot3');
+let coins = document.getElementById("coins");
+
+
+for(let i = 0; i < 3; i++) {
+	console.log('slot' + i);
+	slots[i] = document.getElementById('slot' + i);
+}
+coins.innerHTML = balance
 
 console.log(rnd())
 
 function rotate() {
-    slot1.className = rnd();
-    slot2.className = rnd();
-    slot3.className = rnd();
+    slots[0].className = rnd();
+    slots[1].className = rnd();
+	slots[2].className = rnd();
+	coins.innerHTML = balance
 }
 
 rotate();
 
 function superRotate() {
+	if (balance <= 0)
+	return alert('У вас недостаточно денег на балансе!')
+	balance--;
 	setTimeout(rotate, 200);
 	setTimeout(rotate, 400);
 	setTimeout(rotate, 600);
