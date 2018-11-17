@@ -33,27 +33,16 @@ function rotate() {
 rotate();
 
 function superRotate() {
-    rotate();
 	setTimeout(rotate, 200);
-	rotate();
 	setTimeout(rotate, 400);
-	rotate();
 	setTimeout(rotate, 600);
-	rotate();
 	setTimeout(rotate, 800);
-	rotate();
 	setTimeout(rotate, 1000);
-	rotate();
 	setTimeout(rotate, 1200);
-	rotate();
 	setTimeout(rotate, 1500);
-	rotate();
 	setTimeout(rotate, 1800);
-	rotate();
 	setTimeout(rotate, 2200);
-	rotate();
 	setTimeout(rotate, 2600);
-	rotate();
 	setTimeout(rotate, 3100);
 }
 
